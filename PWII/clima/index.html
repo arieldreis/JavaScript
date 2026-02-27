@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App de Clima</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌤️ Clima Agora</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Digite a cidade..." />
+      <button onclick="getWeather()">🔍</button>
+    </div>
+
+    <div class="weather-box" id="weatherBox">
+      <p class="info">Insira uma cidade para ver a previsão do tempo.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="conteudo">
+        <div>
+            <h1>DESCUBRA A SENHA</h1>
+            <div class="centralizar">
+                <input type="number" id="1" min="0" max="9" value="0" class="num">
+                <input type="number" id="2" min="0" max="9" value="0" class="num">
+                <input type="number" id="3" min="0" max="9" value="0" class="num">
+                <input type="number" id="4" min="0" max="9" value="0" class="num">
+            </div>
+        </div>
+        <div class="centralizar">
+            <button id="validar">VALIDAR</button>
+        </div>
+        <div id="painel">
+            <h2>Tentativas</h2><br>
+            <p id="tentativa">&nbsp;</p>
+        </div>
+        <div id="dicas">&nbsp;</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

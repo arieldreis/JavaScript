@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fundo com gradiente animado */
+body {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+/* Título */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Barra de busca */
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-box input {
+  padding: 0.7rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.search-box input:focus {
+  border-color: #4a90e2;
+}
+
+.search-box button {
+  padding: 0.7rem 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #357ABD;
+}
+
+/* Bloco com dados do clima */
+.weather-box {
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.weather-box p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input, .search-box button {
+    width: 100%;
+  }
+}
