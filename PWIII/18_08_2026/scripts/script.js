@@ -34,11 +34,10 @@ async function queryWeather(){
         const umidade = responseMeteo.current.relative_humidity_2m;
         const vento = responseMeteo.current.wind_speed_10m;
 
-        
         // Mostra no navegador os dados gerados pela API
         resultado.innerHTML = `
-            <ul>
-                <li>Cidade: ${estado}</li>
+            <h2>${estado}</h2>
+            <ul id="listas">
                 <li>País: ${pais}</li>
                 <li>Temperatura: ${temperatura}°C</li>
                 <li>Sensação Térmica: ${sensacao_termica}°C</li>
@@ -46,7 +45,6 @@ async function queryWeather(){
                 <li>Vento: ${vento}</li>
             </ul>
         `;
-
         // Limpa o input
         typeWeather.value = "";
 
