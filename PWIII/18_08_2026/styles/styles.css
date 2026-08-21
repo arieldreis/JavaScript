@@ -1,89 +1,135 @@
 /* Seleciona TODOS os elementos da página */
 * {
-  margin: 0; /* Remove a margem padrão dos elementos */
-  padding: 0; /* Remove o espaçamento interno padrão */
-  box-sizing: border-box; /* Faz padding e borda entrarem no tamanho total do elemento */
-  font-family: "Poppins", sans-serif; /* Define a fonte como Poppins */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* Estiliza o corpo inteiro da página */
+/* Corpo da página */
 body {
-  display: flex; /* Ativa o Flexbox */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  height: 100vh; /* Ocupa 100% da altura da tela */
-  background: linear-gradient(135deg, #4facfe, #00f2fe); /* Cria um degradê azul */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 80px;
+  background:   #c2c1c4;
 }
 
-/* Estiliza o elemento com a classe "container" */
+/* Container principal */
 .container {
-  background: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência */
-  padding: 25px; /* Espaçamento interno de 25px */
-  border-radius: 15px; /* Arredonda os cantos */
-  backdrop-filter: blur(10px); /* Aplica efeito de desfoque no fundo atrás */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Cria uma sombra */
-  text-align: center; /* Centraliza os textos */
-  width: 350px; /* Define a largura do container */
-  transition: transform 0.3s ease; /* Deixa a animação suave */
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: none;
+  text-align: center;
+  width: 350px;
+  transition: none;
 }
 
-/* Aplica estilo quando o mouse passa sobre o container */
+/* Remove o efeito de aumento */
 .container:hover {
-  transform: scale(1.05); /* Aumenta o container em 5% */
+  transform: none;
 }
 
-/* Estiliza todos os elementos <h2> */
+/* Título */
 h2 {
-  color: #fff; /* Define a cor do texto como branca */
-  font-size: 22px; /* Define o tamanho da fonte */
-  margin-bottom: 15px; /* Cria espaço abaixo do título */
+  color: #1100ff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
-/* Estiliza o elemento <main> */
+/* Área principal */
 main {
-  display: flex; /* Ativa o Flexbox */
-  flex-direction: column; /* Organiza os elementos em coluna */
-  gap: 15px; /* Cria 15px de espaço entre os elementos */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-/* Estiliza todos os campos <input> */
+/* Campo de entrada */
 input {
-  width: 100%; /* Ocupa toda a largura disponível */
-  padding: 12px; /* Espaçamento interno */
-  border: none; /* Remove a borda padrão */
-  border-radius: 8px; /* Arredonda os cantos */
-  font-size: 16px; /* Define o tamanho do texto */
-  outline: none; /* Remove o contorno padrão ao clicar */
-  background: rgba(255, 255, 255, 0.3); /* Fundo branco transparente */
-  color: #fff; /* Cor do texto digitado */
-  text-align: center; /* Centraliza o texto dentro do input */
-  transition: 0.3s; /* Deixa as mudanças suaves */
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d5d0e5;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  color: #555;
+  text-align: left;
+  transition: 0.2s;
 }
 
-/* Estiliza o texto de placeholder dos inputs */
+/* Placeholder */
 input::placeholder {
-  color: rgba(255, 255, 255, 0.7); /* Define o placeholder como branco transparente */
+  color: #777;
 }
 
-/* Aplica estilo ao input quando ele está selecionado */
+/* Input selecionado */
 input:focus {
-  background: rgba(255, 255, 255, 0.5); /* Deixa o fundo mais claro */
+  background: #fff;
+  border-color: #aaa;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Estiliza todos os elementos <button> */
+/* Botão */
 button {
-  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Cria um degradê vermelho/rosa */
-  color: white; /* Define a cor do texto como branca */
-  border: none; /* Remove a borda padrão */
-  padding: 12px; /* Espaçamento interno */
-  border-radius: 8px; /* Arredonda os cantos */
-  font-size: 18px; /* Define o tamanho do texto */
-  cursor: pointer; /* Mostra a mãozinha ao passar o mouse */
-  transition: 0.3s; /* Deixa as alterações suaves */
+  background: #075bea;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-/* Aplica estilo quando o mouse passa sobre o botão */
+/* Botão ao passar o mouse */
 button:hover {
-  background: linear-gradient(135deg, #ff4b2b, #ff416c); /* Inverte as cores do degradê */
-  transform: scale(1.05); /* Aumenta o botão em 5% */
+  background: #004dcc;
+  transform: none;
+}
+
+.resultado{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Lista de informações do clima */
+ul {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  width: 100%;
+}
+
+/* Itens da lista */
+li {
+  background: #fff;
+  color: #444;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  text-align: left;
+  border: 1px solid #e2deeb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Primeiro item da lista */
+li:first-child {
+  margin-top: 5px;
+}
+
+/* Efeito ao passar o mouse */
+li:hover {
+  background: #f8f7ff;
+  border-color: #075bea;
+  transition: 0.2s;
 }
