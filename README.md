@@ -26,9 +26,9 @@ Este repositório contém exercícios e práticas em **JavaScript (front-end)**,
 ## 🚀 Como executar
 ```bash
 # Clone o repositório
-git clone "https://github.com/arieldreis/Java-Script.git"
+git clone "https://github.com/arieldreis/Brainstorming_JS.git"
 
 # Entre na pasta do projeto
-cd Java-Script
+cd Brainstorming_JS
 
 # Abra o arquivo que você deseja no navegador
